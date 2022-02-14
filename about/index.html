@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            关于 | Macchiato - 破坏您电脑的最佳选择
+        </title>
+        <style>
+            body, div, p {
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <iframe id="ifr" src="./in.html" style="width: 100vmax;height: 100vmin;border: medium none;" onload="ifr.focus()"></iframe>
+    </body>
+    <script>
+        var ifr = document.getElementById("body");
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            ifr.style.transform = "rotate(90deg)";
+            ifr.style.width = "100%";
+            ifr.style.height = "100%";
+            console.log("turn");
+        }
+    </script>
+</html>
